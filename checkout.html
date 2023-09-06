@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-container">
+        <div class="header-left">
+          <a href="#" class="trigger destop-hide"
+            ><span class="i ri-menu-2-line"></span
+          ></a>
+          <!-- Navbar Start -->
+          <div class="header-nav">
+            <ul class="header-menu">
+              <li><a href="/">Home</a></li>
+              <li>
+                <a href="/"
+                  >Products
+                  <div class="fly-item"><span>New</span></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Site Logo End -->
+        <div>
+          <div class="iscart">
+            <div class="shopping">
+              <a href="/cart.html">
+                <img src="./assets/shopping.svg" />
+                <span class="item-number total-count"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="checkout-section">
+        <div class="container">
+          <div class="checkout flexwrap">
+            <div class="item left styled">
+              <h1>Shipping Address</h1>
+              <form action="">
+                <div class="form-name-box">
+                  <p>
+                    <label for="fName">First Name <span></span></label>
+                    <input type="text" name="fname" id="fname" required />
+                  </p>
+                  <p>
+                    <label for="lName">Last Name<span></span></label>
+                    <input type="text" name="lname" id="lname" required />
+                  </p>
+                </div>
+                <p>
+                  <label for="address">Address<span></span></label>
+                  <input type="text" name="address" id="address" required />
+                </p>
+                <p>
+                  <label for="city">City<span></span></label>
+                  <input type="text" name="city" id="city" required />
+                </p>
+                <p>
+                  <label for="country">Country<span></span></label>
+                  <select name="country" id="country">
+                    <option value="">Canada</option>
+                    <option value="">USA</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="country">State/Province<span></span></label>
+                  <select name="" id="country">
+                    <option value="">Alberta</option>
+                    <option value="">British Columbia</option>
+                    <option value="">Manitoba</option>
+                    <option value="">New Brunswick</option>
+                    <option value="">Newfoundland and Labrador</option>
+                    <option value="">Northwest Territories</option>
+                    <option value="">Nova Scotia</option>
+                    <option value="">Nunavut</option>
+                    <option value="">Ontario</option>
+                    <option value="">Prince Edward Island</option>
+                    <option value="">Quebec</option>
+                    <option value="">Saskatchewan</option>
+                    <option value="">Yukon</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="city">City<span></span></label>
+                  <input type="text" name="city" id="city" required />
+                </p>
+                <p>
+                  <label for="city">Zip / Postal Code<span></span></label>
+                  <input type="text" name="postal" id="postal" required />
+                </p>
+                <p>
+                  <label for="city">Phone Number<span></span></label>
+                  <input type="number" name="phone" id="phone" required />
+                </p>
+                <p>
+                  <label for="note">Order Note(Optional)</label>
+                  <textarea type="text" name="note" id="note"> </textarea>
+                </p>
+              </form>
+              <div class="primary-checkout">
+                <button class="primary-button">CONTINUE TO SHIPPING</button>
+              </div>
+            </div>
+            <div class="item right">
+              <h2>Order Summary</h2>
+              <div class="summary-order is_sticky">
+                <div class="summary-totals">
+                  <ul>
+                    <li>
+                      <span> Subtotal </span> <span class="total-cart"></span>
+                    </li>
+                    <li><span>Shipping: DHL(Express)</span><span>$10</span></li>
+
+                    <li><span>Total</span><span>$210</span></li>
+                  </ul>
+                  <a href="/checkout.html" class="cart-button">Check Out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Relate Product you can copy structure -->
+    </main>
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-box-1">
+          <h2>Contact Information</h2>
+          <a href="mailto:adsologist@adsologist.com"
+            >adsologist@adsologist.com</a
+          >
+          <a href="tel:+14372550237 ">+1 437 255 0237</a>
+        </div>
+
+        <div class="footer-box-2">
+          <h2>Information</h2>
+          <p>Adsologist food company Inc</p>
+          <p>@2023 | Adsologist all right</p>
+        </div>
+      </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
+  </body>
+</html>

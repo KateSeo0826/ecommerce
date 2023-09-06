@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <nav class="header-container">
+        <div class="header-left">
+          <a href="#" class="trigger destop-hide"
+            ><span class="i ri-menu-2-line"></span
+          ></a>
+          <!-- Navbar Start -->
+          <div class="header-nav">
+            <ul class="header-menu">
+              <li><a href="/">Home</a></li>
+              <li>
+                <a href="/"
+                  >Products
+                  <div class="fly-item"><span>New</span></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Site Logo End -->
+        <div>
+          <div class="iscart">
+            <a href="#" class="cart-trigger">
+              <div class="shopping">
+                <a href="/cart.html">
+                  <img src="./assets/shopping.svg" />
+                  <span class="item-number total-count"></span>
+                </a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <main>
+      <section class="product-container">
+        <div class="container">
+          <div class="colum">
+            <div class="products one">
+              <div class="row">
+                <div class="item">
+                  <div class="big-image">
+                    <div class="big-image-wrapper swiper-wrapper">
+                      <div class="image-show swiper-slide">
+                        <a data-fslightbox href="assets/products/t-shirt01.png"
+                          ><img src="assets/products/t-shirt01.png" alt=""
+                        /></a>
+                      </div>
+
+                      <div data-fslightbox class="image-show swiper-slide">
+                        <a href="assets/products/t-shirt02.png"
+                          ><img src="assets/products/t-shirt02.png" alt=""
+                        /></a>
+                      </div>
+
+                      <div class="image-show swiper-slide">
+                        <a data-fslightbox href="assets/products/t-shirt03.png"
+                          ><img src="assets/products/t-shirt03.png" alt=""
+                        /></a>
+                      </div>
+
+                      <div class="image-show swiper-slide">
+                        <a data-fslightbox href="assets/products/t-shirt05.png"
+                          ><img src="assets/products/t-shirt05.png" alt=""
+                        /></a>
+                      </div>
+                      <div class="image-show swiper-slide">
+                        <a data-fslightbox href="assets/products/t-shirt06.png"
+                          ><img src="assets/products/t-shirt06.png" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item description-box">
+                  <h1>Fast Fingers</h1>
+                  <p class="description">
+                    "Spirit of the broken item, hear me out! We fell to pieces
+                    but let's accept it, we had a great time. "
+                  </p>
+                  <div class="colors">
+                    <p>Color: Ocean</p>
+                    <div thumbSlide="" class="small-image">
+                      <ul class="small-image-wrapper flexitem swiper-wrapper">
+                        <li class="thumbnail-show swiper-slide">
+                          <p>
+                            <input type="radio" name="color" id="ocean" />
+                            <label for="ocean" class="circle2"></label>
+                          </p>
+                        </li>
+                        <li class="thumbnail-show swiper-slide">
+                          <p>
+                            <input type="radio" name="color" id="black" />
+                            <label for="black" class="circle2"></label>
+                          </p>
+                        </li>
+                        <li class="thumbnail-show swiper-slide">
+                          <p>
+                            <input type="radio" name="color" id="brick" />
+                            <label for="brick" class="circle2"></label>
+                          </p>
+                        </li>
+                        <li class="thumbnail-show swiper-slide">
+                          <p>
+                            <input type="radio" name="color" id="plum" />
+                            <label for="plum" class="circle2"></label>
+                          </p>
+                        </li>
+                        <li class="thumbnail-show swiper-slide">
+                          <p>
+                            <input type="radio" name="color" id="white" />
+                            <label for="white" class="circle2"></label>
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sizes">
+                    <p>Size</p>
+                    <div class="variant">
+                      <form action="">
+                        <p>
+                          <input type="radio" name="color" id="size-2XS" />
+                          <label for="size-2XS" class="circle"
+                            ><span>2XS</span></label
+                          >
+                        </p>
+                        <p>
+                          <input type="radio" name="size" id="size-XS" />
+                          <label for="size-41" class=""><span>XS</span></label>
+                        </p>
+                        <p>
+                          <input type="radio" name="size" id="size-S" />
+                          <label for="size-S" class=""><span>S</span></label>
+                        </p>
+                        <p>
+                          <input type="radio" name="size" id="size-M" />
+                          <label for="size-M" class=""><span>M</span></label>
+                        </p>
+                        <p>
+                          <input type="radio" name="size" id="size-L" />
+                          <label for="size-L" class=""><span>L</span></label>
+                        </p>
+                        <p>
+                          <input type="radio" name="size" id="size-XL" />
+                          <label for="size-XL" class=""><span>XL</span></label>
+                        </p>
+                        <p>
+                          <input type="radio" name="size" id="size-2XL" />
+                          <label for="size-2XL" class=""
+                            ><span>2XL</span></label
+                          >
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <div class="price">
+                      <span>$39</span>
+                    </div>
+
+                    <a
+                      href="#"
+                      class="add-to-cart cart-button"
+                      data-name="FastFingers"
+                      data-price="30"
+                      >ADD to Cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Relate Product you can copy structure -->
+    </main>
+    <!-- Footer Section Start -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-box-1">
+          <h2>Contact Information</h2>
+          <a href="mailto:adsologist@adsologist.com"
+            >adsologist@adsologist.com</a
+          >
+          <a href="tel:+14372550237 ">+1 437 255 0237</a>
+        </div>
+
+        <div class="footer-box-2">
+          <h2>Information</h2>
+          <p>Adsologist food company Inc</p>
+          <p>@2023 | Adsologist all right</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
+  </body>
+</html>

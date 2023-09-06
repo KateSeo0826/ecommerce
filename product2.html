@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Geany 1.37.1" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+
+    <!--  REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <nav class="header-container">
+        <div class="header-left">
+          <a href="#" class="trigger destop-hide"
+            ><span class="i ri-menu-2-line"></span
+          ></a>
+          <!-- Navbar Start -->
+          <div class="header-nav">
+            <ul class="header-menu">
+              <li><a href="/">Home</a></li>
+              <li>
+                <a href="/"
+                  >Products
+                  <div class="fly-item"><span>New</span></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Site Logo End -->
+        <div>
+          <div class="iscart">
+            <div class="shopping">
+              <a href="./cart.html">
+                <img src="./assets/shopping.svg" />
+                <span class="item-number total-count"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <main>
+      <section class="product-container">
+        <div class="container">
+          <div class="colum">
+            <div class="products one">
+              <div class="row">
+                <div class="item">
+                  <model-viewer
+                    src="./assets/3d/nike_dunk.gltf"
+                    alt="A 3D model of Nike Shoes"
+                    shadow-intensity="1"
+                    camera-controls
+                    auto-rotate
+                    ar
+                  >
+                  </model-viewer>
+                  <!-- <div class="big-image">
+                    <div class="big-image-wrapper swiper-wrapper">
+                      <div class="image-show swiper-slide">
+                        <a data-fslightbox href="assets/products/t-shirt01.png"
+                          ><img src="assets/products/t-shirt01.png" alt=""
+                        /></a>
+                      </div>
+
+                      <div data-fslightbox class="image-show swiper-slide">
+                        <a href="assets/products/t-shirt02.png"
+                          ><img src="assets/products/t-shirt02.png" alt=""
+                        /></a>
+                      </div>
+
+                      <div class="image-show swiper-slide">
+                        <a data-fslightbox href="assets/products/t-shirt03.png"
+                          ><img src="assets/products/t-shirt03.png" alt=""
+                        /></a>
+                      </div>
+
+                      <div class="image-show swiper-slide">
+                        <a data-fslightbox href="assets/products/t-shirt05.png"
+                          ><img src="assets/products/t-shirt05.png" alt=""
+                        /></a>
+                      </div>
+                      <div class="image-show swiper-slide">
+                        <a data-fslightbox href="assets/products/t-shirt06.png"
+                          ><img src="assets/products/t-shirt06.png" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="item description-box">
+                  <h1>NIKE SB DUNK HIGH</h1>
+                  <p class="description">
+                    This island-inspired SB Dunk High features a traditional
+                    floral print to capture Hawaiian vibes—but that's not all.
+                    The first layer of material tears away over time, revealing
+                    surprises that further contribute to the shoe's oceanside
+                    motif, including shaggy green suede and a palm tree print.
+                  </p>
+                  <!-- <div class="colors">
+                    <p>Color: Ocean</p>
+                    <div thumbSlide="" class="small-image">
+                      <ul class="small-image-wrapper flexitem swiper-wrapper">
+                        <li class="thumbnail-show swiper-slide">
+                          <p>
+                            <input type="radio" name="color" id="ocean" />
+                            <label for="ocean" class="circle2"></label>
+                          </p>
+                        </li>
+                        <li class="thumbnail-show swiper-slide">
+                          <p>
+                            <input type="radio" name="color" id="black" />
+                            <label for="black" class="circle2"></label>
+                          </p>
+                        </li>
+                        <li class="thumbnail-show swiper-slide">
+                          <p>
+                            <input type="radio" name="color" id="brick" />
+                            <label for="brick" class="circle2"></label>
+                          </p>
+                        </li>
+                        <li class="thumbnail-show swiper-slide">
+                          <p>
+                            <input type="radio" name="color" id="plum" />
+                            <label for="plum" class="circle2"></label>
+                          </p>
+                        </li>
+                        <li class="thumbnail-show swiper-slide">
+                          <p>
+                            <input type="radio" name="color" id="white" />
+                            <label for="white" class="circle2"></label>
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div> -->
+                  <div class="sizes">
+                    <p>Size</p>
+                    <div class="variant">
+                      <form action="">
+                        <p>
+                          <input type="radio" name="color" id="size-M4" />
+                          <label for="size-M4" class="circle"
+                            ><span>M4</span></label
+                          >
+                        </p>
+                        <p>
+                          <input type="radio" name="size" id="size-M5" />
+                          <label for="size-M5" class=""><span>M5</span></label>
+                        </p>
+                        <p>
+                          <input type="radio" name="size" id="size-M6" />
+                          <label for="size-M6" class=""><span>M6</span></label>
+                        </p>
+                        <p>
+                          <input type="radio" name="size" id="size-M7" />
+                          <label for="size-M7" class=""><span>M7</span></label>
+                        </p>
+                        <p>
+                          <input type="radio" name="size" id="size-M8" />
+                          <label for="size-M8" class=""><span>M8</span></label>
+                        </p>
+                        <p>
+                          <input type="radio" name="size" id="size-M9" />
+                          <label for="size-M9" class=""><span>M9</span></label>
+                        </p>
+                        <p>
+                          <input type="radio" name="size" id="size-M10" />
+                          <label for="size-M10" class=""
+                            ><span>M10</span></label
+                          >
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <div class="price">
+                      <span>$39</span>
+                    </div>
+                    <a
+                      class="add-to-cart cart-button"
+                      href="#"
+                      data-name="NIKE"
+                      data-price="200"
+                      data-img="nike.png"
+                      >ADD to Cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Relate Product you can copy structure -->
+    </main>
+    <!-- Footer Section Start -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-box-1">
+          <h2>Contact Information</h2>
+          <a href="mailto:adsologist@adsologist.com"
+            >adsologist@adsologist.com</a
+          >
+          <a href="tel:+14372550237 ">+1 437 255 0237</a>
+        </div>
+
+        <div class="footer-box-2">
+          <h2>Information</h2>
+          <p>Adsologist food company Inc</p>
+          <p>@2023 | Adsologist all right</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="./products.js"></script>
+  </body>
+</html>
