@@ -89,3 +89,11 @@ function initApp() {
     })
 }
 initApp();
+
+
+
+$('#card-2').deAnimate({
+    trigger: 'click',
+    classIn: 'flipInY',
+    parallel: false
+});
